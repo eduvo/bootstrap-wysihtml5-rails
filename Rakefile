@@ -57,7 +57,7 @@ task 'update' do
   system("cp #{ORIGIN_LIB_PATH}/js/wysihtml5-0.3.0.js #{DEST_JAVASCRIPT_PATH}/wysihtml5.js")
   system("cp #{ORIGIN_LIB_PATH}/css/wysiwyg-color.css #{DEST_CSS_PATH}/wysiwyg-color.css")
 
-  b2
+  # b2
   # b3
 
   # ["#{DEST_JAVASCRIPT_PATH}/core.js.erb", "#{DEST_JAVASCRIPT_PATH}/core-b3.js.erb"].each do |file|

@@ -5865,10 +5865,10 @@ wysihtml5.quirks.cleanPastedHTML = (function() {
         return;
       }
 
-      // if (keyCode === wysihtml5.ENTER_KEY && !wysihtml5.browser.insertsLineBreaksOnReturn()) {
-      //   composer.commands.exec("insertLineBreak");
-      //   event.preventDefault();
-      // }
+      if (keyCode === wysihtml5.ENTER_KEY && !wysihtml5.browser.insertsLineBreaksOnReturn()) {
+        composer.commands.exec("insertLineBreak");
+        event.preventDefault();
+      }
     }
     
     // keypress doesn't fire when you hit backspace

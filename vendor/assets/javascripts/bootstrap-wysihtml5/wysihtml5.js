@@ -5865,7 +5865,7 @@ wysihtml5.quirks.cleanPastedHTML = (function() {
         return;
       }
 
-      if (keyCode === wysihtml5.ENTER_KEY && !wysihtml5.browser.insertsLineBreaksOnReturn()) {
+      if (this.config.useLineBreaks && keyCode === wysihtml5.ENTER_KEY && !wysihtml5.browser.insertsLineBreaksOnReturn()) { {
         composer.commands.exec("insertLineBreak");
         event.preventDefault();
       }
